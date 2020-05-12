@@ -947,6 +947,20 @@ define Device/prolink_pwh2004
 endef
 TARGET_DEVICES += prolink_pwh2004
 
+define Device/ipcam_pt
+  SOC := rt5350
+  IMAGE_SIZE := 7872k
+  DEVICE_VENDOR := PT
+  DEVICE_MODEL := IPCAM
+  DEVICE_PACKAGES := kmod-usb-ohci kmod-usb-uhci kmod-usb2 \
+	kmod-i2c-core kmod-usb-storage kmod-fs-vfat \
+	kmod-i2c-ralink kmod-spi-dev \
+	kmod-video-core kmod-video-uvc mjpg-streamer mjpg-streamer-input-uvc mjpg-streamer-output-http \
+	kmod-video-gspca-sonixb kmod-video-gspca-sonixj
+  SUPPORTED_DEVICES += ipcam-pt
+endef
+TARGET_DEVICES += ipcam_pt
+
 define Device/ralink_v22rw-2x2
   SOC := rt3052
   BLOCKSIZE := 64k

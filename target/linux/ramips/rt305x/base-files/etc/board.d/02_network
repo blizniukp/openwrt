@@ -101,6 +101,7 @@ ramips_setup_interfaces()
 	nixcore,x1-16m|\
 	nixcore,x1-8m|\
 	planex,mzk-w300nh2|\
+	pcam,pt|\
 	zyxel,keenetic)
 		ucidef_add_switch "switch0" \
 			"0:lan" "1:lan" "2:lan" "3:lan" "4:wan" "6@eth0"
@@ -201,6 +202,7 @@ ramips_setup_macs()
 	dlink,dir-620-d1|\
 	edimax,3g-6200n|\
 	edimax,3g-6200nl|\
+	ipcam,pt|\
 	netcore,nw718|\
 	nexx,wt1520-4m|\
 	nexx,wt1520-8m|\
